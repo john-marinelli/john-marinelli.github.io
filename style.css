@@ -1,0 +1,21 @@
+.namePlate {
+    grid-area: namePlate;
+    background: salmon;
+}
+
+.sectionTitle {
+    grid-area: sectionTitle;
+    background: lightblue;
+}
+
+#mainContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "namePlate namePlate namePlate namePlate"
+    "sectionTitle sectionTitle . ."
+    ". . . ."
+    ". . . .";
+}
+
